@@ -83,6 +83,7 @@ header {
 .mainName{
     color:var(--back-color);
     font-weight: var(--font-semi-bold);
+    font-size: 20px;
 }
 .header-links{
     display: flex;
@@ -388,4 +389,47 @@ header {
     background-color:green;
     width: 100%;
     height: 100vh;
+}
+/************************************************ FOOTER *****************************************/
+.footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    background-color: var(--dark-color);
+    color: var(--dark-color);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-main-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.footer-title, .footer-links, .footer-icons{
+    margin: 5vh 7vw;
+}
+.footer-title h2, p{
+    color: var(--back-color);
+    margin: 10px 0;
+}
+.footer-links li{
+    margin: 20px 0;
+}
+.footer-links li a{
+    color: var(--back-color);
+}
+.footer-icons{
+    display: block;
+    /* flex-direction: column; */
+}
+.footer-icons a{
+    margin: 0 20px;
+}
+.footer-icons a img{
+    width: 40px;
+}
+.footer-rights{
+    margin-bottom: 3%;
 }
