@@ -1,24 +1,29 @@
-const navMenu = document.getElementById('nav-menu');
-const navToogle = document.getElementById('nav-toggle');
-const navClose = document.getElementById('nav-close');
+const navOpen = document.querySelector('.header-peque');
+const navClose = document.querySelector('#close');
+const navShow = document.querySelector('.header-links-peque');
+const nav = document.querySelector('.header-peque');
 
-if(navToogle){
-    navToogle.addEventListener('click', () =>{
-        navMenu.classList.add('show-menu');
+if(navOpen){
+    navOpen.addEventListener('click', () =>
+    {
+        navShow.style.display = 'flex';
+        nav.style.display = 'none';
     })
 }
 
 if(navClose){
-    navClose.addEventListener('click', () =>{
-        navMenu.classList.remove('show-menu');
+    navClose.addEventListener('click', () =>
+    {
+        navShow.style.display = 'none';
+        nav.style.display = 'block';
     })
 }
 
-const navLink = document.querySelectorAll('.nav-link');
+/*const navLink = document.querySelectorAll('.nav-link');
 
 function linkAction()
 {
     const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('show-menu');
 }
-navLink.forEach(n => n.addEventListener('click', linkAction));
+navLink.forEach(n => n.addEventListener('click', linkAction));*/
