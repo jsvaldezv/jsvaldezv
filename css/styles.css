@@ -97,6 +97,9 @@ header {
     width: 20px;
     height: 20px;
 }
+.header-links li:hover{
+    opacity: 0.8;
+}
 .header-peque, .header-links-peque, #close{
     display: none;
 }
@@ -401,8 +404,10 @@ header {
 .about{
     width: 100%;
     height: 90vh;
-    text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
 }
 .about h2{
     padding: 20px 0;
@@ -416,6 +421,10 @@ header {
 .info{
     justify-content: center;
     align-items:center;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .info p{
     color: var(--dark-color);
@@ -429,13 +438,16 @@ header {
 .info h3{
     background-color:var(--dark-color);
     color: var(--back-color);
-    width: 100px;
+    width: 7vw;
     height: 50px;
-    border-radius: 15%;
-    margin: auto;
+    border-radius: 20%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.info h3:hover{
+    background-color: var(--hover-color);
 }
 /************************************************ FOOTER *****************************************/
 .footer{
@@ -450,12 +462,12 @@ header {
 }
 .footer-main-content{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 95%;
     align-items: center;
 }
 .footer-title, .footer-links, .footer-icons{
-    margin: 5vh 7vw;
+    margin: 1vh 7vw;
 }
 .footer-title h2, p{
     color: var(--back-color);
@@ -473,11 +485,11 @@ header {
 .footer-icons a{
     margin: 0 5px;
 }
+.footer-icons a:hover, .footer-links li a:hover{
+    opacity: 0.8;
+}
 .footer-icons a img{
     width: 40px;
-}
-.footer-rights{
-    margin-bottom: 3%;
 }
 
 @media screen and (max-width: 815px)
