@@ -2,8 +2,10 @@ const navOpen = document.querySelector('.header-peque');
 const navClose = document.querySelector('#close');
 const navShow = document.querySelector('.header-links-peque');
 const nav = document.querySelector('.header-peque');
-
+const arrow = document.querySelector('#arrow');
 const tMenu = new TimelineMax();
+
+let show = false;
 
 if(navOpen){
     navOpen.addEventListener('click', () =>
@@ -28,11 +30,27 @@ if(navClose){
     })
 }
 
-/*const navLink = document.querySelectorAll('.nav-link');
-
-function linkAction()
+function changeCarro()
 {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.remove('show-menu');
+  const techs = document.querySelectorAll(".showTechs");
+  const other = document.querySelectorAll(".showOther");
+
+  if(!show)
+  {
+    techs[0].style.display = 'none';
+    techs[1].style.display = 'none';
+    other[0].style.display = 'block';
+    other[1].style.display = 'block';
+    show = true;
+  }
+  else
+  {
+    techs[0].style.display = 'block';
+    techs[1].style.display = 'block';
+    other[0].style.display = 'none';
+    other[1].style.display = 'none';
+    show = false;
+  }
 }
-navLink.forEach(n => n.addEventListener('click', linkAction));*/
+
+arrow.addEventListener('click', changeCarro)

@@ -1,0 +1,268 @@
+/****************************************** GOOGLE FONTS ************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/******************************************** VARIABLES ************************************/
+:root
+{
+    --header-height: 3rem;
+    --dark-color: #012A36;
+    --medium-dark-color: #004257;
+    --back-color: #E8E8E8;
+    --hover-color: #003f52;
+
+    font-family: 'Poppins', sans-serif;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/******************************************** GENERAL HTML ************************************/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--back-color);
+    color: var(--dark-color);
+}
+h1,h2,h3,h4, p{
+    color: var(--dark-color);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/******************************************** GENERAL ME ************************************/
+header {
+    width: 100%;
+    position: fixed;
+    background-color: var(--dark-color);
+    z-index: 10;
+}
+.myHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 15%;
+    align-items: center;
+    text-align: center;
+}
+.mainName{
+    color:var(--back-color);
+    font-weight: var(--font-semi-bold);
+    font-size: 20px;
+}
+.mainName:hover{
+    opacity: 0.8;
+}
+.header-links{
+    display: flex;
+}
+.header-links li{
+    margin: 0 20px;
+    font-weight: var(--font-semi-bold);
+}
+.header-links p{
+    color: var(--back-color);
+}
+.header-links img{
+    width: 20px;
+    height: 20px;
+}
+.header-links li:hover{
+    opacity: 0.8;
+}
+.header-peque, .header-links-peque, #close{
+    display: none;
+}
+.main-titles{
+    color: var(--dark-color);
+    z-index: 3;
+}
+.main-titles h1{
+    font-size:50px;
+    color: var(--dark-color);
+}
+.main-titles h2{
+    font-size:20px;
+    color: var(--dark-color);
+}
+.main-titles h3{
+    margin: 10px 0;
+    font-size:15px;
+    font-weight: var(--font-medium);
+    color: var(--dark-color);
+}
+
+@media screen and (max-width: 815px)
+{
+    header{
+        background-color:var(--dark-color);
+        height: 0;
+    }
+    .mainName{
+        color: var(--back-color);
+    }
+    .myHeader{
+        width: 100%;
+        margin: auto;
+        padding: 3vh 10%;
+        position: fixed;
+        bottom: 0;
+        background-color:var(--dark-color);
+    }
+    .header-links{
+        display: none;
+    }
+    .header-links-peque{
+        display: none;
+        height: 20vh;
+        position: fixed;
+        background-color: var(--dark-color);
+        width: 100%;
+        left: 0;
+        justify-content:center;
+        align-items: center;
+        border-radius: 40px;
+        margin-bottom: 40px;
+    }
+    .header-links-peque li{
+        margin: 0 20px;
+        font-weight: var(--font-semi-bold);
+    }
+    .header-links-peque img{
+        width: 20px;
+        height: 20px;
+    }
+    .header-peque{
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .header-peque:hover, .header-links-peque img{
+        cursor: pointer;
+        filter: opacity(70%);
+    }
+    #close{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+}
+
+/************************************************ FOOTER *****************************************/
+.footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    background-color: var(--medium-dark-color);
+    color: var(--dark-color);
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-main-content{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    align-items: center;
+}
+.footer-title, .footer-links, .footer-icons{
+    margin: 1vh 7vw;
+}
+.footer-title h2, p{
+    color: var(--back-color);
+    margin: 10px 0;
+}
+.footer-links li{
+    margin: 20px 0;
+}
+.footer-links li a{
+    color: var(--back-color);
+}
+.footer-icons{
+    display: block;
+}
+.footer-icons a{
+    margin: 0 5px;
+}
+.footer-icons a:hover, .footer-links li a:hover{
+    opacity: 0.8;
+}
+.footer-icons a img{
+    width: 40px;
+}
+
+@media screen and (max-width: 815px)
+{
+    .footer{
+        height: 50vh;
+        position: relative;
+        bottom: 8.2vh;
+        align-items: center
+    }
+    .footer-main-content{
+        display: block;
+    }
+    .footer-icons{
+        margin: 10px 0;
+    }
+    .footer-icons a{
+        margin: 0px 10px;
+    }
+    .footer-rights {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    .footer{
+        height: 65vh;
+    }
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #ba7453, #d1a984);
+}
