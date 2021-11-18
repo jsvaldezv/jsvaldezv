@@ -32,23 +32,27 @@ if(navClose){
 
 function changeCarro()
 {
-  const techs = document.querySelectorAll(".showTechs");
+  const techs = document.querySelectorAll(".showTech");
   const other = document.querySelectorAll(".showOther");
 
   if(!show)
   {
     techs[0].style.display = 'none';
     techs[1].style.display = 'none';
+    techs[2].style.display = 'none';
     other[0].style.display = 'block';
     other[1].style.display = 'block';
+    other[2].style.display = 'block';
     show = true;
   }
   else
   {
     techs[0].style.display = 'block';
     techs[1].style.display = 'block';
+    techs[2].style.display = 'block';
     other[0].style.display = 'none';
     other[1].style.display = 'none';
+    other[2].style.display = 'none';
     show = false;
   }
 }
