@@ -6,6 +6,10 @@
     --hover-color: #003f52;
     --zafiro-color: #01adff;
     --ruby-color: #ba0034;
+    --duck-color: rgb(226, 223, 0);
+    --sampler-color: #3a3a3a;
+    --swiper-theme-color: #ffffff !important;
+    --swiper-pagination-bullet-inactive-color: #ffffff !important;
 }
 
 .plugins{
@@ -62,18 +66,40 @@
     font-size:20px;
     padding: 10px;
     border-radius:20px;
-    width: 10vh;
+    width: 15vh;
     height: 50px;
     text-align: center;
     margin: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.techIcons{
+    display: flex;
+    justify-content: flex-start;
+}
+.techIcons img{
+    width: 30px;
+    margin: 10px 10px 0 0;
+}
+.juceImg{
+    height: 30px;
 }
 .zaf{
     background-color:var(--zafiro-color);
 }
 .ruby{
     background-color:var(--ruby-color);
+}
+.duck{
+    background-color:var(--duck-color);
+    color: black !important;
+}
+.duckSee{
+    background-color:var(--dark-color);
+}
+.sampler{
+    background-color:var(--sampler-color);
 }
 .see:hover{
     cursor: pointer;
