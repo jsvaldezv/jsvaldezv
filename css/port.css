@@ -7,7 +7,9 @@
     --zafiro-color: #01adff;
     --ruby-color: #ba0034;
     --duck-color: rgb(226, 223, 0);
-    --sampler-color: #3a3a3a;
+    --distor-color: rgb(75 110 10);
+    --sampler-color: #3a3a3a; 
+    --spatializer-color: ##2206c5;
     --swiper-theme-color: #ffffff !important;
     --swiper-pagination-bullet-inactive-color: #ffffff !important;
 }
@@ -53,6 +55,7 @@
     font-size:15px;
     color: var(--back-color);
     width: 30vw;
+    margin-top: 20px;
 }
 .info{
     display: flex;
@@ -97,6 +100,9 @@
 }
 .duckSee{
     background-color:var(--dark-color);
+}
+.distor{
+    background-color:var(--distor-color);
 }
 .sampler{
     background-color:var(--sampler-color);
