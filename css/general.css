@@ -266,3 +266,9 @@ header {
     height: 100vh;
     background: linear-gradient(to left, #ba7453, #d1a984);
 }
+
+.linea{
+    width: 20%;
+    height: 1px;
+    background-color: var(--dark-color)
+}

@@ -250,11 +250,6 @@
 .info h3:hover{
     background-color: var(--hover-color);
 }
-.linea{
-    width: 20%;
-    height: 1px;
-    background-color: var(--dark-color)
-}
 @media screen and (max-width: 815px)
 {
     .about{
