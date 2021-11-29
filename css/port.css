@@ -164,3 +164,47 @@
     width: 40px !important;
     height: 43px !important;
 }
+
+@media screen and (max-width: 815px)
+{
+    .swiper{
+        height:100vh;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .swiper-slide{
+        flex-direction: column-reverse;
+    }
+    .plugins{
+        padding-top:10vh;
+        height:110vh;
+        text-align:center;
+        padding-bottom: 15vh;
+    }
+    .swiper-slide img{
+        width: 200px;
+        margin-left:4vw;
+    }
+    .swiper-slide h4{
+        width: 50vw;
+    }
+    .techIcons img{
+        width: 30px;
+    }
+    .info{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    .info h3{
+        font-size: 30px;
+    }
+    .see{
+        width: 20vh;
+    }
+    .see p{
+        font-size:14px;
+    }
+}
