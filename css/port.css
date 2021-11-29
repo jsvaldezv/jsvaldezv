@@ -156,3 +156,11 @@
 .earcandyBack img{
     filter: invert(0%);
 }
+.potImg{
+    width: 127px !important;
+    filter: brightness(5.5);
+}
+.kidsJS{
+    width: 40px !important;
+    height: 43px !important;
+}
