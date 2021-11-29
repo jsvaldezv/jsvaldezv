@@ -19,3 +19,34 @@ const swiper = new Swiper('.swiper',
     el: '.swiper-scrollbar',
   },
 });
+
+const idioma = document.querySelector('.idioma');
+let idiom = "espanol"
+
+function changeIdioma()
+{
+  const espa = document.querySelectorAll(".espanol");
+  const engl = document.querySelectorAll(".english");
+
+  if (idiom == "espanol")
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'block';
+      engl[i].style.display = 'none';
+    }
+
+    idiom = "english";
+  }
+  else
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'none';
+      engl[i].style.display = 'block';
+    }
+    idiom = "espanol";
+  }
+}
+
+idioma.addEventListener('click', changeIdioma)

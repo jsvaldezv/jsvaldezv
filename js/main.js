@@ -3,9 +3,11 @@ const navClose = document.querySelector('#close');
 const navShow = document.querySelector('.header-links-peque');
 const nav = document.querySelector('.header-peque');
 const arrow = document.querySelector('#arrow');
+const idioma = document.querySelector('.idioma');
 const tMenu = new TimelineMax();
 
 let show = false;
+let idiom = "espanol"
 
 if(navOpen){
     navOpen.addEventListener('click', () =>
@@ -57,4 +59,31 @@ function changeCarro()
   }
 }
 
+function changeIdioma()
+{
+  const espa = document.querySelectorAll(".espanol");
+  const engl = document.querySelectorAll(".english");
+
+  if (idiom == "espanol")
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'block';
+      engl[i].style.display = 'none';
+    }
+
+    idiom = "english";
+  }
+  else
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'none';
+      engl[i].style.display = 'block';
+    }
+    idiom = "espanol";
+  }
+}
+
 arrow.addEventListener('click', changeCarro)
+idioma.addEventListener('click', changeIdioma)

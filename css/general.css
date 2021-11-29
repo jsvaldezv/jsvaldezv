@@ -125,6 +125,9 @@ header {
     font-weight: var(--font-medium);
     color: var(--dark-color);
 }
+.idioma:hover{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 815px)
 {
@@ -271,4 +274,11 @@ header {
     width: 20%;
     height: 1px;
     background-color: var(--dark-color)
+}
+
+.english{
+    display: block;
+}
+.espanol{
+    display: none;
 }

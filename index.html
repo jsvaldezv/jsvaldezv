@@ -22,49 +22,44 @@
 
             <ul class="header-links">
                 <li>
-                    <a href="index.html">
-                        <img src="img/icons/user.svg" alt="">
-                        <p>Sobre mí</p>
-                    </a>
-                </li>
-                <li>
                     <a href="port.html">
                         <img src="img/icons/portfolio.svg" alt="">
-                        <p>Portafolio</p>
+                        <p class="espanol">Portafolio</p>
+                        <p class="english">Portfolio</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="img/icons/message.svg" alt="">
-                        <p>Contacto</p>
+                        <p class="espanol">Contacto</p>
+                        <p class="english">Contact</p>
                     </a>
                 </li>
-                <li>
-                    <a href="">
-                        <img src="img/icons/moonset.svg" alt="">
-                        <p>Tema</p>
-                    </a>
+                <li class="idioma">
+                    <img src="img/icons/lan.png" alt="" style="filter: invert(1)">
+                    <p>Lang</p>
                 </li>
             </ul>
 
             <ul class="header-links-peque">
                 <li>
-                    <a href="index.html#about">
-                        <img src="img/icons/user.svg" alt="">
-                        <p>About</p>
-                    </a>
-                </li>
-                <li>
                     <a href="port.html">
                         <img src="img/icons/portfolio.svg" alt="">
-                        <p>Portfolio</p>
+                        <p class="espanol">Portafolio</p>
+                        <p class="english">Portfolio</p>
+                    </a>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="img/icons/message.svg" alt="">
-                        <p>Contact</p>
+                        <p class="espanol">Contacto</p>
+                        <p class="english">Contact</p>
                     </a>
+                </li>
+                <li class="idioma">
+                    <img src="img/icons/lan.png" alt="" style="filter: invert(1)">
+                    <p>Lang</p>
                 </li>
 
                 <img src="img/icons/close.svg" alt="" id="close">
@@ -101,16 +96,22 @@
             </div>
         </div>
         <div class="main-titles">
-            <h1>¡Hola, soy Jesús!</h1>
-            <h2>Ingeniero en Producción Musical</h2>
-            <h3>Programador de audio</h3>
+            <h1 class="espanol">¡Hola, soy Jesús!</h1>
+            <h1 class="english">Hello, I'm Jesus!</h1>
+
+            <h2 class="espanol">Ingeniero en Producción Musical</h2>
+            <h2 class="english">Music Production Engineer</h2>
+
+            <h3 class="espanol">Programador de audio</h3>
+            <h3 class="english">Audio programming</h3>
             <!-- <h4>Creativo, innovador y amante de la música y el audio</h4> -->
         </div>
     </main>
 
     <!-- ME -->
     <div class="about" id="aboutMe">
-        <h2>Sobre mí</h2>
+        <h2 class="espanol">Sobre mí</h2>
+        <h2 class="english">About me</h2>
         <div class="linea"></div>
         <div class="contentAbout">
             <div class="home-img">
@@ -119,9 +120,13 @@
                 </div>
             </div>
             <div class="info">
-                <p>Ingenierio en Producción Musical de la Ciudad de México. Tengo una especialidad en 
+                <p class="espanol">Ingenierio en Producción Musical de la Ciudad de México. Tengo una especialidad en 
                     desarrollo tecnológico musical y programación de audio, desarrollo plug-ins y 
                     aplicaciones de audio y soy amante de la música y la tecnología.
+                </p>
+                <p class="english">Music Production Engineer from Mexico City. I have a specialty in music technology 
+                    development and audio programming, I develop plug-ins and audio applications and I 
+                    love music and technology. 
                 </p>
                 <a href="./img/cv.pdf" target="_blank" class="cv"><h3>CV</h3></a>
             </div>
@@ -480,18 +485,25 @@
         <div class="footer-main-content">
                 <div class="footer-title">
                     <h2>Jesús Valdez</h2>
-                    <p>Ingeniero en Producción Musical</p>
-                    <p>Programador de audio</p>
+
+                    <p class="espanol">Ingeniero en Producción Musical</p>
+                    <p class="english">Music Production Engineer</p>  
+                    
+                    <p class="espanol">Programador de audio</p>
+                    <p class="english">Audio programming</p>
+
                 </div>
                 <ul class="footer-links">
                     <li>
-                        <a href="#about" class="footer-link">Sobre mí</a>
+                        <a href="#about" class="footer-link espanol">Sobre mí</a>
+                        <a href="#about" class="footer-link english">About me</a>
                     </li>
                     <li>
                         <a href="#portfolio" class="footer-link">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#contact" class="footer-link">Contacto</a>
+                        <a href="#contact" class="footer-link espanol">Contacto</a>
+                        <a href="#contact" class="footer-link english">Contact</a>
                     </li>
                 </ul>
                 <div class="footer-icons">
@@ -500,7 +512,8 @@
                     <a href="https://twitter.com/anticode_" target="_blank"><img src="img/icons/twitter-light.svg" alt=""></a>
                 </div>
         </div>
-        <p class="footer-rights">&#169; Jesús Valdez. Todos los derechos reservados.</p>
+        <p class="footer-rights espanol">&#169; Jesús Valdez. Todos los derechos reservados.</p>
+        <p class="footer-rights english">&#169; Jesús Valdez. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
