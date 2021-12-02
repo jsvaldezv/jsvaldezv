@@ -78,6 +78,9 @@
     align-items: center;
     justify-content: center;
 }
+.see p{
+    font-size:14px;
+}
 .techIcons{
     display: flex;
     justify-content: flex-start;
@@ -167,8 +170,9 @@
     filter: brightness(5.5);
 }
 .kidsJS{
-    width: 40px !important;
-    height: 43px !important;
+    padding-top: 10px;
+    width: 35px !important;
+    height: 46px !important;
 }
 
 /* SONGS */
@@ -181,7 +185,7 @@
     align-items: center;
     text-align:center;
 }
-.desktopSongs{
+.spotifySongs{
     width: 100%;
     height: 50vh;
     display: flex;
@@ -189,7 +193,7 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.desktopSongs iframe{
+.spotifySongs iframe{
     margin: 0px 20px;
 }
 
@@ -215,7 +219,7 @@
         margin-left:4vw;
     }
     .swiper-slide h4{
-        width: 50vw;
+        width: 70vw;
     }
     .techIcons img{
         width: 30px;
@@ -228,11 +232,33 @@
     }
     .info h3{
         font-size: 30px;
+        margin: 20px 0;
+    }
+    .info h4{
+        margin: 20px 0;
     }
     .see{
-        width: 20vh;
+        width: 15vh;
+        height: 40px;
     }
     .see p{
-        font-size:14px;
+        font-size:10px;
+    }
+    iframe{
+        width: 250px;
+    }
+    .spotifySongs{
+        height:100vh;
+    }
+    .spotifySongs iframe{
+        margin: 10px 20px;
+    }
+    .potImg{
+        width:100px !important;
+        height: 26px;
+    }
+    .songs{
+        justify-content: flex-start;
+        height: 165vh;
     }
 }
