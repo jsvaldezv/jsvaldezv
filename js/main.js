@@ -32,7 +32,7 @@ if(navClose){
     })
 }
 
-function changeCarro()
+function changeSkills()
 {
   const techs = document.querySelectorAll(".showTech");
   const other = document.querySelectorAll(".showOther");
@@ -85,5 +85,5 @@ function changeIdioma()
   }
 }
 
-arrow.addEventListener('click', changeCarro)
+arrow.addEventListener('click', changeSkills)
 idioma.addEventListener('click', changeIdioma)
