@@ -4,6 +4,7 @@ const navClose = document.querySelector('#close');
 const navShow = document.querySelector('.header-links-peque');
 const nav = document.querySelector('.header-peque');
 const idioma = document.querySelector('.idioma');
+const idiomaPhone = document.querySelector('.idiomaPhone');
 const tMenu = new TimelineMax();
 //const arrow = document.querySelector('#arrow');
 
@@ -11,7 +12,8 @@ let show = false;
 let idiom = "espanol"
 
 // MENU RESPONSIVE
-if(navOpen){
+if(navOpen)
+{
     navOpen.addEventListener('click', () =>
     {
         nav.style.display = 'none';
@@ -92,3 +94,4 @@ function changeIdioma()
 // LISTENERS
 //arrow.addEventListener('click', changeSkills)
 idioma.addEventListener('click', changeIdioma)
+idiomaPhone.addEventListener('click', changeIdioma)

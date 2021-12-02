@@ -76,8 +76,10 @@ if(grande.matches)
 if(peque.matches)
 {
   tl.fromTo(header,0.8, {height: "100vh"}, {height: "8.5vh", ease: Power2.easeInOut})
-    .fromTo(namePeque,0.8, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut}, "-=0.4")
-    .fromTo(menuPeque,0.8, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut}, "-=0.8");
+
+  tl.fromTo(title, 1.4, {x: "800px"}, {x: "0px", ease: Circ.easeInOut}, "-=1");
+
+  tl.fromTo(carrousel,1.4, {x: "-500px"}, {x: "0px", ease: Back.easeInOut}, "-=1");
 }
 
 // ************************************* LISTENERS ************************************* //
