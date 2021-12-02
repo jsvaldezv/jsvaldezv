@@ -319,7 +319,7 @@
     align-items: center;
 }
 .box img{
-    width: 90px;
+    width: 80px;
 }
 .box .front, .box .back{
     position: absolute;

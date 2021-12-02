@@ -1,14 +1,16 @@
+// DECLARACIONES
 const navOpen = document.querySelector('.header-peque');
 const navClose = document.querySelector('#close');
 const navShow = document.querySelector('.header-links-peque');
 const nav = document.querySelector('.header-peque');
-const arrow = document.querySelector('#arrow');
 const idioma = document.querySelector('.idioma');
 const tMenu = new TimelineMax();
+//const arrow = document.querySelector('#arrow');
 
 let show = false;
 let idiom = "espanol"
 
+// MENU RESPONSIVE
 if(navOpen){
     navOpen.addEventListener('click', () =>
     {
@@ -32,7 +34,8 @@ if(navClose){
     })
 }
 
-function changeSkills()
+// CHANGE SKILLS IN HTML
+/*function changeSkills()
 {
   const techs = document.querySelectorAll(".showTech");
   const other = document.querySelectorAll(".showOther");
@@ -57,8 +60,9 @@ function changeSkills()
     other[2].style.display = 'none';
     show = false;
   }
-}
+}*/
 
+// CHANGE IDIOMA
 function changeIdioma()
 {
   const espa = document.querySelectorAll(".espanol");
@@ -85,5 +89,6 @@ function changeIdioma()
   }
 }
 
-arrow.addEventListener('click', changeSkills)
+// LISTENERS
+//arrow.addEventListener('click', changeSkills)
 idioma.addEventListener('click', changeIdioma)
