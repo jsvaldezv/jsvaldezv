@@ -1,3 +1,11 @@
+:root
+{
+    --header-height: 3rem;
+    --dark-color: #012A36;
+    --medium-dark-color: #004257;
+    --back-color: #E8E8E8;
+    --hover-color: #003f52;
+}
 /************************************************ MAIN *****************************************/
 .main{
     width: 100%;
@@ -367,6 +375,59 @@
     display: block;
 }
 
+/* FORM */
+.form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    text-align: center;
+    font-size:3em;
+}
+.contact-wrapper{
+    width: 40%;
+    box-shadow: 0 0 10px 0 #004257;
+    background-color: var(--dark-color);
+    margin: 20px 0;
+}
+.contact-wrapper > *{
+    padding: 1em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button{
+    background-color: var(--back-color);
+    color: black;
+    border: 0;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus{
+    opacity: 0.9;
+    cursor: pointer;
+    outline: 0; 
+}
+
+
 @media screen and (max-width: 815px)
 {
     .desktop{
@@ -395,6 +456,15 @@
     }
     .techs{
         padding-top: 0;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+    .contact{
+        font-size:40px;
+    }
+    .contact-wrapper{
+        width: 80%;
     }
 }
 
