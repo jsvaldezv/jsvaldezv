@@ -5,6 +5,7 @@ const navShow = document.querySelector('.header-links-peque');
 const nav = document.querySelector('.header-peque');
 const idioma = document.querySelector('.idioma');
 const idiomaPhone = document.querySelector('.idiomaPhone');
+const tMenu = new TimelineMax();
 //const arrow = document.querySelector('#arrow');
 
 let idiom = "espanol"
