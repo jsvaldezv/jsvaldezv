@@ -1,5 +1,6 @@
 <?php
-if(isset($_POST['acepto'])){
+if(isset($_POST['acepto']))
+{
     if(!empty($_POST['name']) && !empty($_POST['mail']) && !empty($_POST['message']))
     {
         $name = $_POST['name'];
@@ -20,9 +21,7 @@ if(isset($_POST['acepto'])){
 
         $mail = mail($para, utf8_decode($asunto), utf8_decode($message), $header);
 
-        header("Location:../index.html#form");
-
-        echo("Enviado");
+        header("Location:index.html#form");
     }
 }
 ?>
