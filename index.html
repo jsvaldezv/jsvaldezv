@@ -547,30 +547,30 @@
         <div class="contact-wrapper">
             <div class="contact-form">
                 <h3>Contact me</h3>
-                <form action="" class="contact_form">
+                <form action="php/enviar.php" method="post">
                     <p>
-                        <label class="espanol">Nombres</label>
-                        <label class="english">Names</label>
-                        <input type="text" class="name" required>
+                        <label class="espanol">Nombre</label>
+                        <label class="english">Name</label>
+                        <input type="text" name="name" required>
                     </p>
-                    <p>
+                    <!-- <p>
                         <label class="espanol">Asunto</label>
                         <label class="english">Subject</label>
-                        <input type="text" class="subject" required>
-                    </p>
+                        <input type="text" required>
+                    </p> -->
                     <p>
                         <label class="espanol">Correo</label>
                         <label class="english">E-mail</label>
-                        <input type="email" class="mail" required>
+                        <input type="email" name="mail" required>
                     </p>
                     <p>
                         <label class="espanol">Mensaje</label>
                         <label class="english">Message</label>
-                        <textarea rows="5" class="text" required></textarea>
+                        <textarea rows="5" name="message" required></textarea>
                     </p>
                     <p>
-                        <button type="submit" class="espanol sendEsp">Enviar</button>
-                        <button type="submit" class="english sendEn">Send</button>
+                        <button type="submit" class="espanol" value="Enviar" name="acepto">Enviar</button>
+                        <button type="submit" class="english" value="Enviar" name="acepto">Send</button>
                     </p>
                 </form>
             </div>
@@ -619,7 +619,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
     integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
 
