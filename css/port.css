@@ -66,7 +66,7 @@
     margin: 0 50px;
 }
 .see{
-    color:white;
+    color:var(--back-color);
     font-size:20px;
     padding: 10px;
     border-radius:20px;
@@ -102,7 +102,7 @@
 }
 .duck{
     background-color:var(--duck-color);
-    color: black !important;
+    color: var(--dark-color) !important;
 }
 .duckSee{
     background-color:var(--dark-color);
@@ -125,13 +125,13 @@
 
 /* IA */
 .ia{
-    background-color: black;
+    background-color: var(--dark-color);
 }
 .iaSee{
-    background-color: white;
+    background-color: var(--back-color);
 }
 .iaSee p{
-    color:black;
+    color:var(--dark-color);
 }
 .iaSee img{
     filter: invert(0%);
@@ -142,25 +142,25 @@
     background-color:#aecd44;
 }
 .kidsBack h3, .kidsBack h4{
-    color: black;
+    color: var(--dark-color);
 }
 .kidsBack a{
-    background-color:black;
+    background-color:var(--dark-color);
 }
 .matrixBack p{
-    color:black;
+    color:var(--dark-color);
 }
 .matrixBack img{
     filter: invert(0%);
 }
 .matrixBack a{
-    background-color:white;
+    background-color:var(--back-color);
 }
 .earcandyBack p{
-    color: black;
+    color: var(--dark-color);
 }
 .earcandyBack a{
-    background-color:white;
+    background-color:var(--back-color);
 }
 .earcandyBack img{
     filter: invert(0%);
