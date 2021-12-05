@@ -1,3 +1,5 @@
+import {Email} from "https://smtpjs.com/v3/smtp.js";
+
 // DECLARACIONES
 const navOpen = document.querySelector('.header-peque');
 const navClose = document.querySelector('#close');
