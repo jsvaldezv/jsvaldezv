@@ -197,13 +197,44 @@
     margin: 0px 20px;
 }
 
+/* EMPRENDIMIENTOS */
+.empresas{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.empresas-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.empresas-info div{
+    width: 50%;
+    margin: 0px 100px;
+}
+.empresas-info h2{
+    margin-bottom: 20px;
+}
+.empresas-info h4{
+    font-weight: 100;
+}
+.imgEmpresa{
+    width: 250px;
+}
+
 @media screen and (max-width: 815px)
 {
     .swiper{
         height:100vh;
     }
     .title{
-        font-size: 30px;
+        font-size: 24px;
     }
     .swiper-slide{
         flex-direction: column-reverse;
@@ -260,5 +291,16 @@
     .songs{
         justify-content: flex-start;
         height: 165vh;
+    }
+
+    .empresas{
+        margin-bottom: 40%;
+    }
+    .empresas-info{
+        flex-direction: column;
+    }
+    .empresas-info div{
+        width: 50%;
+        margin: 0px 10px;
     }
 }
