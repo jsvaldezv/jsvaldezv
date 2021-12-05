@@ -1,26 +1,3 @@
-// ************************************************ CARROUSEL ********************************************** //
-const swiper = new Swiper('.swiper', 
-{
-  speed: 600,
-  parallax: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
 // ********************************************** DECLARACIONES ********************************************** //
 // ANIMACINOES
 const carrousel = document.querySelector(".swiper");
@@ -31,8 +8,8 @@ var peque = window.matchMedia("(max-width: 815px)");
 const tl = new TimelineMax();
 
 // LANGUAGE CHANGE
-const idioma = document.querySelector('.idioma');
-let idiom = "espanol"
+const idiomaPort = document.querySelector('.idioma');
+let idiomPort = "espanol"
 
 // ************************************* CAMBIAR IDIOMA ************************************* //
 function changeIdioma()
@@ -40,7 +17,7 @@ function changeIdioma()
   const espa = document.querySelectorAll(".espanol");
   const engl = document.querySelectorAll(".english");
 
-  if (idiom == "espanol")
+  if (idiomPort == "espanol")
   {
     for(var i = 0; i < espa.length; i++)
     {
@@ -48,7 +25,7 @@ function changeIdioma()
       engl[i].style.display = 'none';
     }
 
-    idiom = "english";
+    idiomPort = "english";
   }
   else
   {
@@ -57,7 +34,7 @@ function changeIdioma()
       espa[i].style.display = 'none';
       engl[i].style.display = 'block';
     }
-    idiom = "espanol";
+    idiomPort = "espanol";
   }
 }
 
@@ -83,4 +60,27 @@ if(peque.matches)
 }
 
 // ************************************* LISTENERS ************************************* //
-idioma.addEventListener('click', changeIdioma)
+idiomaPort.addEventListener('click', changeIdioma)
+
+// ************************************************ CARROUSEL ********************************************** //
+const swiper = new Swiper('.swiper', 
+{
+  speed: 600,
+  parallax: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
