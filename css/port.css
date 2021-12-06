@@ -176,25 +176,47 @@
 }
 
 /* SONGS */
-.songs{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-}
-.spotifySongs{
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    align-items: center;
-}
 .spotifySongs iframe{
     margin: 0px 20px;
+}
+.tramontana{
+    background-color: #B6BECD;
+}
+.tramontana img, .kosako img, .hux img, .esencia img, .brando img, .curse img, .login img{
+    width: 300px;
+}
+.kosako{
+    background-color: #56BEDC;
+}
+.hux{
+    background-color: #000000;
+}
+.hux h4, .hux h3{
+    color:var(--back-color)
+}
+.esencia{
+    background-color:#dfbab3;
+}
+.brando{
+    background-color: #f8e9d0;
+}
+.curse{
+    background-color: #c2b090;
+}
+.login{
+    background-color: #50b42a;
+}
+.songIcons{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.songIcons img{
+    width: 30px;
+    margin: 10px 10px 0 0;
+}
+.phoneSong{
+    display: block;
 }
 
 /* EMPRENDIMIENTOS */
@@ -206,7 +228,8 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    margin: 50px 0px;
 }
 .empresas-info{
     display: flex;
@@ -303,4 +326,23 @@
         width: 70%;
         margin: 0px 10px;
     }
+    .tramontana img, .kosako img, .hux img, .esencia img, .brando img, .curse img, .login img{
+        width:180px;
+        margin-bottom: 50px;
+    }
+    .songIcons img{
+        width: 30px;
+        margin: 10px 10px 0 0;
+    }
+    .tramontana,.kosako, .hux, .esencia, .brando, .curse, .login{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .tramontana h3, .kosako h3, .hux h3, .esencia h3, .brando h3, .curse h3, .login h3{
+        display: none;
+    } */
+    .phoneSong{
+        display: none;
+    }
+
 }
