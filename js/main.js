@@ -8,8 +8,10 @@ const idiomaPhone = document.querySelector('.idiomaPhone');
 const tMenu = new TimelineMax();
 //const arrow = document.querySelector('#arrow');
 
-let idiom = "espanol"
-//let show = false;
+var userLang = navigator.language || navigator.userLanguage; 
+//var langInit = "en";
+
+let idiom = "en"
 
 // MENU RESPONSIVE
 if(navOpen)
@@ -63,7 +65,44 @@ function changeIdioma()
   }
 }
 
+function setInitialLan()
+{
+  const espa = document.querySelectorAll(".espanol");
+  const engl = document.querySelectorAll(".english");
+
+  if (idiom == "es")
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'block';
+      engl[i].style.display = 'none';
+    }
+
+    idiom = "en";
+  }
+  else
+  {
+    for(var i = 0; i < espa.length; i++)
+    {
+      espa[i].style.display = 'none';
+      engl[i].style.display = 'block';
+    }
+    idiom = "es";
+  }
+}
+
+function firstStuff()
+{
+  if (userLang.substr(0,2) == 'es')
+    idiom = "es";
+  else
+    idiom = "en";
+  
+  setInitialLan();
+}
+
 // LISTENERS
+window.onload = firstStuff();
 idioma.addEventListener('click', changeIdioma);
 idiomaPhone.addEventListener('click', changeIdioma);
 

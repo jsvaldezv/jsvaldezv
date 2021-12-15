@@ -468,6 +468,22 @@
         width: 80%;
         margin: 10px 0;
     }
+    .box .front{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 2;
+    }
+    .box .back{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 1;
+    }
+    .box:hover .front{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 2;
+    }
+    .box:hover .back{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 1;
+    }
 }
 
 @media screen and (max-width: 300px)
