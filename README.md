@@ -2,12 +2,12 @@
 <img src="https://gifimage.net/wp-content/uploads/2018/05/sound-wave-gif-12.gif" width="100%" height="100px">
 
 <!-- NAME AND CAREER -->
-<h1 align="center" display="flex">Hello, I'm Jesus!</h1>
-<h2 align="center"> Engineer in Music Production | Audio Programmer | DJ & Producer </h2>
+<h1 align="center">Hello, I'm Jesus!</h1>
+<h3 align="center"> Engineer in Music Production | Audio Programmer | DJ & Producer </h3>
 
 <!-- SOCIAL NETWORK -->
 <p align="center">
-    <a href="https://twitter.com/anticode_" target="_blank">
+    <a href="https://www.linkedin.com/in/jsvaldezv/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
     </a>
     <a href="https://jsvaldezv.github.io/jsvaldezv/" target="_blank">
@@ -16,10 +16,10 @@
     <a href="https://twitter.com/anticode_" target="_blank">
         <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
     </a>
-     <a href="https://twitter.com/anticode_" target="_blank">
+     <a href="https://discord.gg/WJvn7m2KwJ" target="_blank">
          <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white">
     </a>
-    <a href="https://twitter.com/anticode_" target="_blank">
+    <a href="https://www.youtube.com/channel/UCnmhLuxpV3PftGI2YR5kpFA" target="_blank">
         <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white">
     </a>
 </p>
@@ -29,10 +29,10 @@
 <ul>
     <li> :pushpin: 21 years old </li>
     <li>🇲🇽 Mexican</li>
-    <li>🧑‍🏫 Experience teaching audio programming to different students.</li>
-    <li>💻 Currently working at Start-Up Ear Candy Technologies developing audio plug-ins.</li>
-    <li>🎧 Music and tech lover.</li>
-    <li>🗣️ English and Spanish.</li>
+    <li>💻 Currently working at Start-Up "Ear Candy Technologies" developing audio plug-ins</li>
+    <li>🧑‍🏫 Experience teaching audio programming to different students</li>
+    <li>🎧 Music and tech lover</li>
+    <li>🗣️ English and spanish</li>
 <ul>
 
 <!-- LANGUAGES -->
