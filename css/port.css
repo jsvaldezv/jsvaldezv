@@ -4,6 +4,7 @@
     --medium-dark-color: #004257;
     --back-color: #E8E8E8;
     --hover-color: #003f52;
+    --esme-color: #00c54f;
     --zafiro-color: #01adff;
     --ruby-color: #ba0034;
     --duck-color: rgb(226, 223, 0);
@@ -93,6 +94,9 @@
 /* PLUGINS */
 .juceImg{
     height: 30px;
+}
+.esme{
+    background-color:var(--esme-color);
 }
 .zaf{
     background-color:var(--zafiro-color);
