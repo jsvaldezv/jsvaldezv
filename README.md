@@ -52,10 +52,9 @@
 <!-- DAW -->
 <h3>DAWs</h3>
 <img alt="Twitter URL" src="https://img.shields.io/twitter/url?label=Ableton%20Live&logo=ableton%20live&style=social&url=https%3A%2F%2Fwww.ableton.com%2F">
-<img alt="Twitter URL" src="https://img.shields.io/twitter/url?color=%237ACB10&label=Pro%20tools&logo=Pro%20tools&style=social&url=https%3A%2F%2Fwww.ableton.com%2F">
-<ul>
-<br>
-<p> Currently listening... </p>
+<img alt="Twitter URL" src="https://img.shields.io/twitter/url? color=%237ACB10&label=Pro%20tools&logo=Pro%20tools&style=social&url=https%3A%2F%2Fwww.ableton.com%2F">
+
+<h3> Currently listening... </h3>
     
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=12176583617&cover_image=true&theme=natemoo-re&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
 
