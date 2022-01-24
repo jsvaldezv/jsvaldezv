@@ -41,9 +41,12 @@
     <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+    <img alt="Twitter URL" width="60px" height="28px" src="https://img.shields.io/twitter/url?color=grey&label=JUCE&logo=blue&logoColor=blue&url=https%3A%2F%2Fjuce.com%2F">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">
+    <img alt="Twitter URL" width="100px" height="28px" src="https://img.shields.io/twitter/url?color=grey&label=Supercollider&logo=blue&logoColor=blue&url=https%3A%2F%2Fjuce.com%2F">
+    <img alt="Twitter URL" width="100px" height="28px" src="https://img.shields.io/twitter/url?color=grey&label=Max%20for%20Live&logo=blue&logoColor=blue&url=https%3A%2F%2Fjuce.com%2F">
 </div>
 
 <!-- DAW -->
@@ -55,8 +58,5 @@
 <p> Currently listening... </p>
     
 [![spotify-github-profile](https://spotify-github-profile.vercel.app/api/view?uid=12176583617&cover_image=true&theme=natemoo-re&bar_color=53b14f&bar_color_cover=true)](https://github.com/kittinan/spotify-github-profile)
-
-<div align="center">
-<img  alt="Jesus's Github Stats"  src="https://github-readme-stats.vercel.app/api?username=jsvaldezv&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117&title_color=D02929&icon_color=D02929"  height="180"/>
 
 <img align="center" alt="GIF" src="https://media-s3-us-east-1.ceros.com/fortune-magazine/images/2021/01/11/ff7f3e7c916d2dd18de1aade86b0bc53/gettyimages-1220316047-00000.gif" width="100%" height="100%" />
