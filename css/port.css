@@ -1,0 +1,352 @@
+:root
+{
+    --dark-color: #012A36;
+    --medium-dark-color: #004257;
+    --back-color: #E8E8E8;
+    --hover-color: #003f52;
+    --esme-color: #3dc871;
+    --zafiro-color: #01adff;
+    --ruby-color: #ba0034;
+    --duck-color: rgb(226, 223, 0);
+    --distor-color: rgb(75 110 10);
+    --sampler-color: #3a3a3a; 
+    --spatializer-color: ##2206c5;
+    --swiper-theme-color: #ffffff !important;
+    --swiper-pagination-bullet-inactive-color: #ffffff !important;
+}
+
+.plugins{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    flex-direction: column;
+}
+.title{
+    font-size:40px;
+    margin-bottom: 40px;
+}
+
+.swiper{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide{
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:60px;
+    border-radius: 20px;
+}
+.swiper-slide img{
+    width:400px;
+    margin-left: 10vw;
+}
+.swiper-slide h3{
+    color: var(--back-color);
+    font-size: 40px;
+}
+.swiper-slide h4{
+    font-size:15px;
+    color: var(--back-color);
+    width: 30vw;
+    margin-top: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 50px;
+}
+.see{
+    color:var(--back-color);
+    font-size:20px;
+    padding: 10px;
+    border-radius:20px;
+    width: 20vh;
+    height: 50px;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.see p{
+    font-size:14px;
+}
+.techIcons{
+    display: flex;
+    justify-content: flex-start;
+}
+.techIcons img{
+    width: 30px;
+    margin: 10px 10px 0 0;
+}
+
+/* PLUGINS */
+.juceImg{
+    height: 30px;
+}
+.esme{
+    background-color:var(--esme-color);
+}
+.zaf{
+    background-color:var(--zafiro-color);
+}
+.ruby{
+    background-color:var(--ruby-color);
+}
+.duck{
+    background-color:var(--duck-color);
+    color: var(--dark-color) !important;
+}
+.duckSee{
+    background-color:var(--dark-color);
+}
+.distor{
+    background-color:var(--distor-color);
+}
+.sampler{
+    background-color:var(--sampler-color);
+}
+.see:hover{
+    cursor: pointer;
+}
+.arrowP{
+    width:20px !important;
+    height:20px;
+    filter: invert(100%);
+    margin-left: 10px !important;
+}
+
+/* IA */
+.ia{
+    background-color: var(--dark-color);
+}
+.iaSee{
+    background-color: var(--back-color);
+}
+.iaSee p{
+    color:var(--dark-color);
+}
+.iaSee img{
+    filter: invert(0%);
+}
+
+/* WEB */
+.kids{
+    background-color:#aecd44;
+}
+.kidsBack h3, .kidsBack h4{
+    color: var(--dark-color);
+}
+.kidsBack a{
+    background-color:var(--dark-color);
+}
+.matrixBack p{
+    color:var(--dark-color);
+}
+.matrixBack img{
+    filter: invert(0%);
+}
+.matrixBack a{
+    background-color:var(--back-color);
+}
+.earcandyBack p{
+    color: var(--dark-color);
+}
+.earcandyBack a{
+    background-color:var(--back-color);
+}
+.earcandyBack img{
+    filter: invert(0%);
+}
+.potImg{
+    width: 127px !important;
+    filter: brightness(5.5);
+}
+.kidsJS{
+    padding-top: 10px;
+    width: 35px !important;
+    height: 46px !important;
+}
+
+/* SONGS */
+.spotifySongs iframe{
+    margin: 0px 20px;
+}
+.tramontana{
+    background-color: #B6BECD;
+}
+.tramontana img, .kosako img, .hux img, .esencia img, .brando img, .curse img, .login img{
+    width: 300px;
+}
+.kosako{
+    background-color: #56BEDC;
+}
+.hux{
+    background-color: #000000;
+}
+.hux h4, .hux h3{
+    color:var(--back-color)
+}
+.esencia{
+    background-color:#dfbab3;
+}
+.brando{
+    background-color: #f8e9d0;
+}
+.curse{
+    background-color: #c2b090;
+}
+.login{
+    background-color: #50b42a;
+}
+.songIcons{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.songIcons img{
+    width: 30px;
+    margin: 10px 10px 0 0;
+}
+.phoneSong{
+    display: block;
+}
+
+/* EMPRENDIMIENTOS */
+.empresas{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.empresas-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.empresas-info div{
+    width: 50%;
+    margin: 0px 100px;
+}
+.empresas-info h2{
+    margin-bottom: 20px;
+}
+.empresas-info h4{
+    font-weight: 100;
+}
+.imgEmpresa{
+    width: 250px;
+}
+
+@media screen and (max-width: 815px)
+{
+    .swiper{
+        height:100vh;
+    }
+    .title{
+        font-size: 24px;
+    }
+    .swiper-slide{
+        flex-direction: column-reverse;
+    }
+    .plugins{
+        padding-top:10vh;
+        height:110vh;
+        text-align:center;
+        padding-bottom: 15vh;
+    }
+    .swiper-slide img{
+        width: 200px;
+        margin-left:4vw;
+    }
+    .swiper-slide h4{
+        width: 70vw;
+    }
+    .techIcons img{
+        width: 30px;
+    }
+    .info{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+    .info h3{
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .info h4{
+        margin: 20px 0;
+    }
+    .see{
+        width: 15vh;
+        height: 40px;
+    }
+    .see p{
+        font-size:10px;
+    }
+    iframe{
+        width: 250px;
+    }
+    .spotifySongs{
+        height:100vh;
+    }
+    .spotifySongs iframe{
+        margin: 10px 20px;
+    }
+    .potImg{
+        width:100px !important;
+        height: 26px;
+    }
+    .songs{
+        justify-content: flex-start;
+        height: 165vh;
+    }
+
+    .empresas{
+        margin-bottom: 40%;
+    }
+    .empresas-info{
+        flex-direction: column;
+    }
+    .empresas-info div{
+        width: 70%;
+        margin: 0px 10px;
+    }
+    .tramontana img, .kosako img, .hux img, .esencia img, .brando img, .curse img, .login img{
+        width:180px;
+        margin-bottom: 50px;
+    }
+    .songIcons img{
+        width: 30px;
+        margin: 10px 10px 0 0;
+    }
+    .tramontana,.kosako, .hux, .esencia, .brando, .curse, .login{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .tramontana h3, .kosako h3, .hux h3, .esencia h3, .brando h3, .curse h3, .login h3{
+        display: none;
+    } */
+    .phoneSong{
+        display: none;
+    }
+
+}

@@ -1,0 +1,500 @@
+:root
+{
+    --header-height: 3rem;
+    --dark-color: #012A36;
+    --medium-dark-color: #004257;
+    --back-color: #E8E8E8;
+    --hover-color: #003f52;
+}
+/************************************************ MAIN *****************************************/
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--back-color);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    z-index: 10;
+}
+.social-icons{
+    margin: 0px 40px;
+    width: 30px;
+    z-index: 10;
+    position: relative;
+}
+.social-icons a img{
+    margin: 15px 0px
+}
+.me{
+    width: 300px;
+}
+.main-titles{
+    color: var(--dark-color);
+    z-index: 3;
+}
+.main-titles h1{
+    font-size:50px;
+    color: var(--dark-color);
+}
+.main-titles h2{
+    font-size:20px;
+    color: var(--dark-color);
+}
+.main-titles h3{
+    margin: 10px 0;
+    font-size:15px;
+    font-weight: var(--font-medium);
+    color: var(--dark-color);
+}
+.home-img{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+.img-box{
+    max-width:450px;
+    display: block;
+    margin: auto;
+    border-radius: 510%;
+    padding: 15px;
+}
+.home-img .img-box img{
+    width:100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+.inner-shadow{
+    box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px 3px 3px #f8f8f8;
+}
+.outer-shadow{
+    box-shadow: 3px 3px 3px #d0d0d0, -3px 3px 3px #f8f8f8;
+}
+.effect-wrap{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-1{
+    width: 20px;
+    height: 20px;
+    border: 4px solid var(--dark-color);
+    right: 10%;
+    bottom: 15%;
+    animation: spin 20s linear infinite;
+}
+.effect-2{
+    left: 3%;
+    bottom: 20%;
+    width: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: topBounce 5s ease-in-out infinite;
+}
+.effect-2 div{
+    height: 3px;
+    width: 3px;
+    background-color: var(--dark-color);
+    margin: 0 3px 8px;
+}
+.effect-3{
+    height: 180px;
+    width: 180px;
+    border: 25px solid var(--dark-color);
+    border-radius:50%;
+    left: 70%;
+    top: -70px;
+    animation: leftBounce 7s ease-in-out infinite;
+}
+.effect-4{
+    border-top: 30px solid transparent;
+    border-left: 30px solid var(--dark-color);
+    left: 15%;
+    top: 15%;
+    animation: spin 10s linear infinite;
+}
+.effect-4:before{
+    content: '';
+    border-top: 30px solid transparent;
+    border-left: 30px solid var(--dark-color);
+    position: absolute; 
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+.effect-5{
+    height: 30px;
+    width: 30px;
+    right: 10%;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 25s linear infinite;
+}
+.effect-5 div{
+    width: 1px;
+    background-color: var(--dark-color);
+    height: 100%;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes topBounce {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(25px);
+    }
+}
+@keyframes leftBounce {
+    0%,100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+}
+@media screen and (max-width: 815px)
+{
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+    .social-icons{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons a{
+        width: 40px;
+        margin: 0 15px;
+    }
+    .home-img{
+        max-width: 90%;
+        margin: auto;
+    }
+    .main-titles{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .main-titles h3{
+        margin: 10px 10px;
+    }
+    .effect-1, .effect-4{
+        display: none;
+    }
+    .effect-3{
+        left: 20%;
+        top: -140px;
+    }
+}
+/************************************************ ABOUT ME *****************************************/
+.tech{
+    background-color: var(--back-color);
+    width: 100%;
+    height: 100vh;
+}
+.about{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.about h2{
+    padding: 20px 0;
+    font-size: 40px;
+}
+.contentAbout{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.info{
+    justify-content: center;
+    align-items:center;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info p{
+    color: var(--dark-color);
+    margin: 50px 50px;
+    font-size:15px;
+    font-weight: var(--font-medium);
+    font-size:20px;
+    text-align: center;
+    text-justify: inter-word;
+}
+.info h3{
+    background-color:var(--dark-color);
+    color: var(--back-color);
+    width: 7vw;
+    height: 50px;
+    border-radius: 20%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info h3:hover{
+    background-color: var(--hover-color);
+}
+@media screen and (max-width: 815px)
+{
+    .about{
+        height: 100%;
+    }
+    .about h2{
+        padding: 0;
+    }
+    .linea{
+        margin: 10px 0;
+    }
+    .contentAbout{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .info{
+        margin: 0;
+    }
+    .info p{
+        margin: 20px 40px;
+    }
+    .info h3{
+        width: 30vw;
+    }
+    .techs{
+        width: 100%;
+    }
+}
+/********************************************** TECH SKILLS *****************************************/
+.techSkills{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.techSkills h2{
+    color: var(--dark-color);
+    padding-bottom: 10px;
+    font-size: 40px;
+    width: 100%;
+    text-align: center
+}
+.techs{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    flex-direction: column;
+}
+.subtechs{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+.subtechs div{
+    margin: 0px 80px;
+}
+.box{
+    width: 9%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    width: 80px;
+}
+.box .front, .box .back{
+    position: absolute;
+    transition: 2s;
+    backface-visibility: hidden;
+}
+.box .front{
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 2;
+}
+.box .back{
+    transform: perspective(1000px) rotateY(180deg);
+    z-index: 1;
+}
+.box:hover .front{
+    transform: perspective(1000px) rotateY(-180deg);
+    z-index: 2;
+}
+.box:hover .back{
+    transform: perspective(1000px) rotateY(0deg);
+    z-index: 1;
+}
+#arrow{
+    width: 30px;
+    margin-top: 10px;
+    padding-top: 30px;
+}
+#arrow:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.desktop{
+    display: flex;
+}
+.mobile{
+    display: none;
+}
+.techs{
+    display: flex;
+}
+.showOther{
+    display: none;
+}
+.showTech{
+    display: block;
+}
+
+/* FORM */
+.form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    text-align: center;
+    font-size:3em;
+    margin-bottom: 20px;
+}
+.contact-wrapper{
+    width: 40%;
+    box-shadow: 0 0 10px 0 var(--dark-color);
+    background-color: var(--dark-color);
+    margin: 30px 0;
+}
+.contact-wrapper > *{
+    padding: 1em;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 0.7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.contact-form form{
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form button{
+    background-color: var(--back-color);
+    color: var(--dark-color);
+    border: 0;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus{
+    opacity: 0.9;
+    cursor: pointer;
+    outline: 0; 
+}
+
+
+@media screen and (max-width: 815px)
+{
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    #arrow{
+        padding-top: 70px;
+    }
+    .techSkills{
+        margin-bottom: 10vh;
+    }
+    .subtechs{
+        height: 16vh;
+    }
+    .subtechs div{
+        margin: 0px 50px;
+    }
+    .box img{
+        width: 70px;
+    }
+    .box .front{
+        margin: 0;
+    }
+    .techs{
+        padding-top: 0;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+    .contact{
+        font-size:40px;
+    }
+    .contact-wrapper{
+        width: 80%;
+        margin: 10px 0;
+    }
+    .box .front{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 2;
+    }
+    .box .back{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 1;
+    }
+    .box:hover .front{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 2;
+    }
+    .box:hover .back{
+        transform: perspective(1000px) rotateY(0deg);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 300px)
+{
+    .subtechs div{
+        margin: 0 42px;
+    }
+    .box img{
+        width: 60px;
+    }
+    .info p{
+        font-size:16px;
+    }
+}
