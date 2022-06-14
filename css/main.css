@@ -33,6 +33,9 @@
 .main-titles{
     color: var(--dark-color);
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .main-titles h1{
     font-size:50px;
@@ -70,6 +73,20 @@
 }
 .outer-shadow{
     box-shadow: 3px 3px 3px #d0d0d0, -3px 3px 3px #f8f8f8;
+}
+.mainPort{
+    background-color: var(--medium-dark-color);
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+}
+.mainPort:hover{
+    filter: brightness(0.9);
+}
+.mainPort h3{
+    color: white;
+    /* padding-top:10px; */
+    padding-left: 28px;
 }
 .effect-wrap{
     width: 100%;
@@ -192,6 +209,8 @@
     .main-titles{
         text-align: center;
         padding-top: 20px;
+        align-items: center;
+        margin-bottom: 50px;
     }
     .main-titles h3{
         margin: 10px 10px;
@@ -202,6 +221,14 @@
     .effect-3{
         left: 20%;
         top: -140px;
+    }
+    .mainPort{
+        margin-top: 30px;
+    }
+    .mainPort h3{
+        color: white;
+        padding-top: 0px;
+        padding-left: 0px;
     }
 }
 /************************************************ ABOUT ME *****************************************/

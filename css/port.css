@@ -254,6 +254,9 @@
 .imgEmpresa{
     width: 250px;
 }
+.scikitImg{
+    width: 50px !important;
+}
 
 @media screen and (max-width: 815px)
 {
