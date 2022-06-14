@@ -9,6 +9,7 @@
     --ruby-color: #ba0034;
     --duck-color: rgb(226, 223, 0);
     --distor-color: rgb(75 110 10);
+	--banana-color: rgb(192, 167, 142);
     --sampler-color: #3a3a3a; 
     --spatializer-color: ##2206c5;
     --swiper-theme-color: #ffffff !important;
@@ -111,6 +112,9 @@
 .duckSee{
     background-color:var(--dark-color);
 }
+.banana{
+	background-color:var(--banana-color);
+}
 .distor{
     background-color:var(--distor-color);
 }
@@ -142,6 +146,9 @@
 }
 
 /* WEB */
+.drumMachine{
+	background-color:rgb(57, 121, 132);
+}
 .kids{
     background-color:#aecd44;
 }
