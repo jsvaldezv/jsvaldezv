@@ -6,14 +6,8 @@
     <a href="https://www.linkedin.com/in/jsvaldezv/" target="_blank">
         <img src="https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=white">
     </a>
-    <a href="https://jsvaldezv.github.io/jsvaldezv/" target="_blank">
+    <a href="https://jsvaldezv.github.io/" target="_blank">
         <img src="https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=About.me&logoColor=white">
-    </a>
-     <a href="https://discord.gg/WJvn7m2KwJ" target="_blank">
-         <img src="https://img.shields.io/badge/Discord-black?style=for-the-badge&logo=discord&logoColor=white">
-    </a>
-    <a href="https://www.youtube.com/channel/UCnmhLuxpV3PftGI2YR5kpFA" target="_blank">
-        <img src="https://img.shields.io/badge/YouTube-black?style=for-the-badge&logo=youtube&logoColor=white">
     </a>
 </p>
 
